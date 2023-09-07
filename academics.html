@@ -1,0 +1,239 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>University</title>
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+        body {
+            background: url(vit_homepage.jpeg) no-repeat center center fixed;
+            background-size: cover;
+            font-family: Arial, sans-serif;
+        }
+
+        .container {
+            position: relative;
+            width: 100%;
+            height: 50vh;
+            background-color: rgba(0, 0, 0, 0.5);
+            text-align: center;
+            color: #fff;
+        }
+
+        header {
+            padding: 20px 0;
+            background-color: transparent; /* Remove background color */
+        }
+
+        .logo {
+            display: flex;
+            align-items: center;
+            justify-content: center;
+        }
+
+        .logo img {
+            width: 80px;
+            height: 80px;
+        }
+
+        .logo h1 {
+            font-size: 24px;
+            font-family: cursive;
+            margin-left: 10px;
+        }
+
+        nav {
+            margin-top: 20px;
+        }
+
+        nav ul {
+            list-style: none;
+        }
+
+        nav ul li {
+            display: inline-block;
+            margin-right: 20px;
+        }
+
+        nav ul li:last-child {
+            margin-right: 0;
+        }
+
+        /* Style each link with different background colors */
+        nav ul li:nth-child(1) a {
+            background-color: #3498db; /* Blue */
+        }
+
+        nav ul li:nth-child(2) a {
+            background-color: #e74c3c; /* Red */
+        }
+
+        nav ul li:nth-child(3) a {
+            background-color: #2ecc71; /* Green */
+        }
+
+        nav ul li:nth-child(4) a {
+            background-color: #f1c40f; /* Yellow */
+        }
+
+        nav ul li a {
+            text-decoration: none;
+            color: #fff;
+            font-size: 18px;
+            padding: 10px 20px;
+            border-radius: 5px;
+            transition: background-color 0.3s, color 0.3s;
+        }
+
+        nav ul li a:hover {
+            background-color: #00ffff;
+            color: #000;
+        }
+        .info {
+            position: absolute;
+            left: 50%;
+            top: 10%;
+            transform: translate(-50%, -50%);
+        }
+
+        .info h1 {
+            font-size: 48px;
+            margin-bottom: 20px;
+            color: #fff; /* Set text color for headings */
+        }
+
+        .info p {
+            font-size: 18px;
+            max-width: 600px;
+            margin: 0 auto;
+            padding: 0 20px;
+            color:coral /* Set text color for paragraphs */
+        }
+
+        .courses {
+            list-style-type: none;
+            padding: 0;
+            display: flex;
+            flex-wrap: wrap;
+            justify-content: center;
+        }
+
+        .courses li {
+            width: calc(33.33% - 20px);
+            background-color: rgba(0, 0, 0, 0.7);
+            border-radius: 10px;
+            margin: 10px;
+            padding: 20px;
+            text-align: left;
+            box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.5);
+        }
+
+        .courses h2 {
+            font-size: 24px;
+            margin-bottom: 10px;
+            color: #fff; /* Set text color for headings */
+        }
+
+        .courses p {
+            font-size: 16px;
+            margin-top: 10px;
+            color: #777; /* Set text color for paragraphs */
+        }
+
+        /* Button Styles */
+        .btn button {
+            padding: 15px 45px;
+            background-color: transparent;
+            border: 2px solid #00ffff;
+            color: #00ffff;
+            font-size: 18px;
+            border-radius: 25px;
+            cursor: pointer;
+            transition: background-color 0.3s, color 0.3s;
+        }
+
+        .btn button:hover {
+            background-color: #00ffff;
+            color: #000;
+        }
+
+        .courses li {
+            font-size: 18px;
+            margin-bottom: 10px;
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <header>
+            <div class="logo">
+                <img src="vitsmall.png" alt="logo">
+                <h1>VIT University</h1>
+            </div>
+            <nav>
+                <ul>
+                    <li><a href="home.html">HOME</a></li>
+                    <li><a href="academics.html">ACADEMICS</a></li>
+                    <li><a href="admission.html">ADMISSION</a></li>
+                    <li><a href="gallery.html">GALLERY</a></li>
+                </ul>
+            </nav>
+        </div>
+        </header>
+        <div class="container">
+            <div class="info">
+                <h1>Academics</h1>
+                <p>At VIT University, we offer a wide range of academic programs to cater to the diverse interests and career aspirations of our students. Explore our courses below:</p>
+                <ul class="courses">
+                    <li>
+                        <h2>Computer Science</h2>
+                        <p>Prepare for a career in software development, data science, and more with our Computer Science program.</p>
+                    </li>
+                    <li>
+                        <h2>Electrical Engineering</h2>
+                        <p>Learn the fundamentals of electrical systems, electronics, and power generation in our Electrical Engineering program.</p>
+                    </li>
+                    <li>
+                        <h2>Mechanical Engineering</h2>
+                        <p>Explore the world of machines, design, and manufacturing with our Mechanical Engineering program.</p>
+                    </li>
+                    <li>
+                        <h2>Civil Engineering</h2>
+                        <p>Build the infrastructure of the future with our Civil Engineering program, covering structural and environmental engineering.</p>
+                    </li>
+                    <li>
+                        <h2>Chemical Engineering</h2>
+                        <p>Discover the processes and techniques behind chemical manufacturing and innovation in our Chemical Engineering program.</p>
+                    </li>
+                    <li>
+                        <h2>Physics</h2>
+                        <p>Delve into the mysteries of the universe and the fundamental laws of nature with our Physics program.</p>
+                    </li>
+                    <li>
+                        <h2>Mathematics</h2>
+                        <p>Develop strong mathematical and analytical skills that are essential in various fields with our Mathematics program.</p>
+                    </li>
+                    <li>
+                        <h2>Business Administration</h2>
+                        <p>Prepare for leadership roles in the corporate world with our Business Administration program.</p>
+                    </li>
+                    <li>
+                        <h2>Psychology</h2>
+                        <p>Explore the human mind and behavior in our Psychology program, and gain insights into mental health and well-being.</p>
+                    </li>
+                    <li>
+                        <h2>English Literature</h2>
+                        <p>Immerse yourself in the world of literature, language, and culture with our English Literature program.</p>
+                    </li>
+                </ul>
+            </div>
+        </div>
+</body>
+</html>
